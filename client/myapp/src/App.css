@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.homepageHeader 
+{
+   background-color:black ;
+   color:yellow ;
+   height:5vw ;
+   margin-top:-2vw ;
+}
+
+.headerGroups 
+{
+   list-style-type:none ;
+   display:flex ;
+   gap:1.5vw ;
+   font-size:2vw ;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.headerList 
+{
+   font-size:1.5vw ;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.listItem 
+{
+   font-size:1.5vw ;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.headerButton 
+{
+   width:6vw ;
+   font-size:1.5vw ;
+   border-radius:0.50rem ;
+   background-color:red ;
+   color:white ;
+}
+
+.headerButton:hover 
+{
+   transform:scale(1.5) ;
+   transform:scale(1.5) ;
+
+}
+
+.buttons
+{
+    margin-left:10vw ;
+}
+
+.textArea1 
+{
+   background-color: darkgrey ;
+   resize: vertical;
+   min-height: 80vh; 
+   width: 100%; 
+   box-sizing: border-box; 
+   padding: 1rem; 
+   font-size:2vw ;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color:yellow ;
+}
+.textArea2 
+{
+   background-color: black ;
+   resize: vertical;
+   min-height: 12vh; 
+   width: 100%; 
+   box-sizing: border-box; 
+   padding: 1rem; 
+   font-size:2vw ;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color:yellow ;
+   margin-top:-1vw ;
+}
+
+.labelSet 
+{
+   display:flex ;
+   list-style-type:none ;
+   gap:2vw ;
+}
+
+
+.listItemInput 
+{
+   width:25vw ;
+}
