@@ -10,11 +10,6 @@ var taskSchema = mongoose.Schema(
         {
             type:String 
         } , 
-        selectedFileOption :
-        {
-            type:String 
-        } ,
-
     }
 )
 

@@ -10,17 +10,14 @@ const Homepage = () => {
 
   const handleCodeSubmit = async () => {
     try {
-      const payload = {
-        code: code,
-        selectedValueLanguage: selectedValueLanguage,
-        selectedFileOption: selectedFileOption
-      };
-
+      
       const response = await axios.post(
-        "http://localhost:3500/v1/api/handleRunRequest",
-        payload
+        "http://localhost:3500/v1/api/users/postCodeRequest",
+         {
+           code:code ,
+           selectedValueLanguage:selectedValueLanguage
+         }   
       );
-
       console.log(response.data);
       const { output, success } = response.data;
 
@@ -58,9 +55,9 @@ const Homepage = () => {
           </li>
           <li>
           <input
-          type="text"
+          type = "text"
           className="listItemInput"
-          placeholder="C++/C/Java/Javascript/Python/PHP/Perl/Scala/Lua/Kotlin"
+          placeholder="C++/C/Java/Javascript/Python"
           value = {selectedValueLanguage}
           onChange = {(e) => setSelectedValueLanguage(e.target.value)}
           />
@@ -80,10 +77,11 @@ const Homepage = () => {
       <main className="headerMain">
         <div>
           <textarea
+            type = "text"
             className="textArea1"
             id="exampleFormControlTextarea1"
             placeholder="Enter your code here"
-            value={code}
+            value={code} 
             onChange={(e) => setCode(e.target.value)}
           />
         </div>
