@@ -1,4 +1,4 @@
-# Online-IDE
+# Codulate
 It is an online IDE in which the user can run the programs of various programming languages such as C,C++,Python, Java, Javascript and  Python
 The working flow is such that first the input of language is taken then the directory is taken. Each file is assigned a unique jobid and giving the 
 jobid extension its file is created. The file is passed into respective functions and the respective output is generated. 
